@@ -1,2 +1,2 @@
 # Operatsioonisusteemid
-Ops'i praktikumid jms, _Silver Nõgols_
+Ops'i praktikumid, olen _Silver Nõgols_

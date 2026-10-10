@@ -1,4 +1,4 @@
-#Praktikum 4
+# Praktikum 4
 
 Selles praktikumis õppisime windowsi põhilistest turvalisusega seotud tööriistadest, turvaseadetest, mitmekasutajasüsteemide turvamisest. Lõime uued tavakasutajad, võtsime ära ja andsime neile õigusi laadida fail kõikidele kasutajatele, aga selleks on vaja admini autentimist. Laadisime alla ka W11 kõige uuema värskenduse, mul tekkis probleem uuenduse allalaadimisega, kuna kui pidi tegema restart arvutile, uuenduse allalaadimiseks, siis kiilus VMS kinni ja jäi loopima "laeb alla uuendused 100%". Sain lahti sellest, tehes uus
 snapshot ja miskipärast enam ei jäänud kinni.

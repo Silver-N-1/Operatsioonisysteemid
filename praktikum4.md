@@ -1,3 +1,7 @@
+*Praktikum 4*
+
+Selles praktikumis õppisime windowsi põhilistest turvalisusega seotud tööriistadest, turvaseadetest, mitmekasutajasüsteemide turvamisest. Lõime uued tavakasutajad, võtsime ära ja andsime neile õigusi laadida fail kõikidele kasutajatele, aga selleks on vaja admini autentimist. Laadisime alla ka W11 kõige uuema värskenduse, mul tekkis probleem uuenduse allalaadimisega, kuna kui pidi tegema restart arvutile, uuenduse allalaadimiseks, siis kiilus VMS kinni ja jäi loopima "laeb alla uuendused 100%". Sain lahti sellest, tehes uus snapshot ja miskipärast enam ei jäänud kinni.
+
 _praktikum 4.1 pilt_
 
 <img width="565" height="451" alt="OS_praks_4 1" src="https://github.com/user-attachments/assets/2ababce1-a811-4453-aa80-e211fe0d5102" />
@@ -5,6 +9,7 @@ _praktikum 4.1 pilt_
 _praktikum 4.2 pilt_
 
 <img width="664" height="432" alt="OS_praks_4 2" src="https://github.com/user-attachments/assets/868e3c90-ac08-4173-82fa-c35ffc825e32" />
+
 _praktikum 4.3 pilt_
 
 <img width="651" height="425" alt="OS_praks_4 3" src="https://github.com/user-attachments/assets/260bda47-d8ae-428e-803d-ba206776bb33" />
@@ -12,11 +17,18 @@ _praktikum 4.3 pilt_
 
 _praktikum 4.4 _
 
+SYSTEM-il on võrreldes Administratoriga rohkem privileege, näiteks SeImpersonatePrivilege, mis võimaldab protsessil pärast autentimist kliendi identiteeti kasutada. Seetõttu saab SYSTEM teha teatud süsteemitaseme toiminguid, mida tavalisel Administrator-kontol ei ole lubatud teha.
+
+
 _praktikum 4.5 pilt_
 
 
 <img width="902" height="359" alt="OS_praks_4 5" src="https://github.com/user-attachments/assets/5d979903-f5ff-4515-be8c-c6a906cc64c0" />
+
 _praktikum 4.6_
+
+Microsoft soovitab Windowsi turbe rakenduse **Turbeülevaade** all seadistada **Seadme turve -> Tuumisolatsioon -> Mälu tervikluse (Memory integrity)** sisse. Mälu terviklus aitab kaitsta Windowsi olulisi süsteemiprotsesse ja draivereid pahatahtliku koodi eest. See suurendab arvuti kaitset pahavara ja pahatahtlike draiverite vastu.
+
 
 _praktikum 4.7 pilt_
 

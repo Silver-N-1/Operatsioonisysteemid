@@ -20,7 +20,7 @@ _praktikum 4.3 pilt_
 <img width="651" height="425" alt="OS_praks_4 3" src="https://github.com/user-attachments/assets/260bda47-d8ae-428e-803d-ba206776bb33" />
 
 
-_praktikum 4.4 _
+_praktikum 4.4_
 
 SYSTEM-il on võrreldes Administratoriga rohkem privileege, näiteks SeImpersonatePrivilege, mis võimaldab protsessil pärast autentimist kliendi identiteeti kasutada. Seetõttu saab SYSTEM teha teatud süsteemitaseme toiminguid, mida tavalisel Administrator-kontol ei ole lubatud teha.
 

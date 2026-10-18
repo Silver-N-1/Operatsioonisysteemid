@@ -1,6 +1,6 @@
 # Praktikum 5
 
-
+Selles praktikumis õppisime vaatlema süsteemis töötavaid protsesse kasutades ps ja jobs ning mõistma protsessi ID (PID). Lisaks panime protsessid käivitama taustal (&) ning nende viimist esiplaanile ja taustale (fg, bg). Uurisime signaalide saatmist ning panime protsesse peatama, katkestama ja tapma (Ctrl+C, Ctrl+Z, kill). Lõpuks saime koostada ümber suunamisega protsessi sisendeid, väljundeid ja veateateid (>, >>, <, 2>) ning ühendasime need käsud torude (|) abil.  
 
 _Ül 5.1_
 
@@ -27,26 +27,27 @@ _Ül 5.4_
 
 _Ül 5.5_
 
-WM_NCHITTEST, sõnumi ID: 132 Tähendus (Non-Client Hit Test): Saadetakse aknale, et teha kindlaks, milline osa aknast vastab konkreetsele ekraanikoordinaadile. See võib juhtuda näiteks kursori liikumisel, hiirenupu vajutamisel või vabastamisel, või vastusena sellise funktsiooni nagu `WindowFromPoint` väljakutsumisele. Kui hiir ei ole hõivatud (st ükski aken pole seda enda kontrolli alla võtnud), saadetakse teade kursori all asuvale aknale. Vastasel juhul saadetakse teade aknale, mis on hiire enda kontrolli alla võtnud.
+WM_NCHITTEST, sõnumi ID: 132 
+Tähendus (Non-Client Hit Test): Saadetakse aknale, et teha kindlaks, milline osa aknast vastab konkreetsele ekraanikoordinaadile. See võib juhtuda näiteks kursori liikumisel, hiirenupu vajutamisel või vabastamisel, või vastusena sellise funktsiooni nagu `WindowFromPoint` väljakutsumisele. Kui hiir ei ole hõivatud, st ükski aken pole seda enda kontrolli alla võtnud, saadetakse teade kursori all asuvale aknale. Vastasel juhul saadetakse teade aknale, mis on hiire enda kontrolli alla võtnud.
+
 Parameetrite tähendus:
 
-        wParam (0): Seda parameetrit selle sõnumi puhul ei kasutata.
+wParam (0): Seda parameetrit selle sõnumi puhul ei kasutata.
+lParam (7799688): Sisaldab hiirekursori X ja Y koordinaate arvutiekraanil sõnumi saatmise hetkel. 
 
-        lParam (7799688): Sisaldab hiirekursori X ja Y koordinaate arvutiekraanil sõnumi saatmise hetkel. See arv koosneb kahest 16-bitisest osast. Kui arv 7799688 teisendada kuueteistkümnendsüsteemi (0x00770388), saab selle lahti murda:
-
-            Alumine pool (0x0388 ehk detsimaalis 904) on X-koordinaat.
-
-            Ülemine pool (0x0077 ehk detsimaalis 119) on Y-koordinaat.
+https://learn.microsoft.com/en-us/windows/win32/inputdev/wm-nchittest
 
 WM_SETCURSOR, ID: 32 
-    Mida tähendab: Windows saadab selle sõnumi, et aken saaks otsustada, millist hiirekursori ikooni tuleks kuvada (kas tavalist noolt, teksti sisestamise kriipsu (I-beam) või laadimise rullikut).
+    Mida tähendab: Saadetakse aknale, kui hiir põhjustab kursori liikumise akna sees ja hiire sisend ei ole hõivatud.
 
-    Parameetrite tähendus:
+Parameetrite tähendus:
 
-        wParam (657014): Sisaldab selle akna või alamkomponendi (näiteks nupu või tekstivälja) unikaalset ID-d ehk Window Handle'it (HWND), mille kohal kursor parajasti asub.
+wParam (657014): Viit aknale, mis sisaldab kursorit.
+lParam (33554433): Sisaldab samuti kahte infojuppi, mis on kokku pakitud ühte 32-bitisesse arvu.
+Alumine pool (0x0001) tähistab Hit Test koodi.
+Ülemine pool (0x0200) näitab, milline hiiretegevus selle kursori uuendamise esile kutsus. Väärtus 512 on Windowsis WM_MOUSEMOVE sõnumi ID, mis kinnitab, et kursorit lihtsalt liigutati.
 
-        lParam (33554433): Sisaldab samuti kahte infojuppi, mis on kokku pakitud ühte 32-bitisesse arvu (Hex: 0x02000001).
+https://learn.microsoft.com/en-us/windows/win32/menurc/wm-setcursor
 
-            Alumine pool (0x0001) tähistab Hit Test koodi (eelmisest sõnumist). Väärtus 1 tähendab HTCLIENT ehk kursor on akna tavalisel tööalal.
-
-            Ülemine pool (0x0200 ehk detsimaalis 512) näitab, milline hiiretegevus selle kursori uuendamise esile kutsus. Väärtus 512 on Windowsis WM_MOUSEMOVE sõnumi ID, mis kinnitab, et kursorit lihtsalt liigutati (mitte ei tehtud näiteks hiireklikki).
+Failis nimeks ??? ja id < 45000:
+Ei suutnud tekitada sellist olukorda, mille puhul id jääks alla 45000. Kõik mille läbi katsetasin tulid id'd suuremad kui 45000. Näiteks katsetasin ekraani heledaks/tumedaks teha, heli juurde/vähem, hiire rullikut vajutada ja teisi veel.

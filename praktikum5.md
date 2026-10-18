@@ -33,12 +33,13 @@ Tähendus (Non-Client Hit Test): Saadetakse aknale, et teha kindlaks, milline os
 Parameetrite tähendus:
 
 wParam (0): Seda parameetrit selle sõnumi puhul ei kasutata.
+
 lParam (7799688): Sisaldab hiirekursori X ja Y koordinaate arvutiekraanil sõnumi saatmise hetkel. 
 
 https://learn.microsoft.com/en-us/windows/win32/inputdev/wm-nchittest
 
 WM_SETCURSOR, ID: 32 
-    Mida tähendab: Saadetakse aknale, kui hiir põhjustab kursori liikumise akna sees ja hiire sisend ei ole hõivatud.
+Mida tähendab: Saadetakse aknale, kui hiir põhjustab kursori liikumise akna sees ja hiire sisend ei ole hõivatud.
 
 Parameetrite tähendus:
 

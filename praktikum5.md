@@ -43,7 +43,9 @@ WM_SETCURSOR, ID: 32
 Parameetrite tähendus:
 
 wParam (657014): Viit aknale, mis sisaldab kursorit.
+
 lParam (33554433): Sisaldab samuti kahte infojuppi, mis on kokku pakitud ühte 32-bitisesse arvu.
+
 Alumine pool (0x0001) tähistab Hit Test koodi.
 Ülemine pool (0x0200) näitab, milline hiiretegevus selle kursori uuendamise esile kutsus. Väärtus 512 on Windowsis WM_MOUSEMOVE sõnumi ID, mis kinnitab, et kursorit lihtsalt liigutati.
 

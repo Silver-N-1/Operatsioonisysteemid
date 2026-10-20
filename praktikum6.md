@@ -2,7 +2,7 @@
 Selles praktikumis õppisime pääsuõigustest, määrasime failide ning kataloogide õigusi ja muutisime omanikke. Lisaks lõime uusi gruppe ning kasutajaid. Üldjoontes sain enda arust praktikumiga hästi hakkama.
 
 _6.1_
-a)
+<br> a)
 Kaustale /tmp/kaust on vaja ainult sisenemisõigust (x), sest siis pääseb kausta sisse ning õigust (r) pole vaja, kuna me teame faili nime. Failile minufail.txt on vaja ainult lugemisõigust (r), sest siis on võimalik faili sisu lugeda.
 b) Kataloogil /tmp/kaust on vaja õigusi (w, x), sest on vaja kausta sisse pääseda (x) ja failide muutmiseks kausta sees on vaja kirjutamis (w) õigust. Failile minufail.exe ei vaja ühtegi õigust, kui tahta seda kustutada, sest kui kataloogis, kus see fail sees on sul õigus kirjutada (w), siis saab selle faili ära kustutada.
 

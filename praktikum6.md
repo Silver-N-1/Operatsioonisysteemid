@@ -4,7 +4,7 @@ Selles praktikumis õppisime pääsuõigustest, määrasime failide ning kataloo
 _6.1_
 <br> a)
 Kaustale /tmp/kaust on vaja ainult sisenemisõigust (x), sest siis pääseb kausta sisse ning õigust (r) pole vaja, kuna me teame faili nime. Failile minufail.txt on vaja ainult lugemisõigust (r), sest siis on võimalik faili sisu lugeda.
-b) Kataloogil /tmp/kaust on vaja õigusi (w, x), sest on vaja kausta sisse pääseda (x) ja failide muutmiseks kausta sees on vaja kirjutamis (w) õigust. Failile minufail.exe ei vaja ühtegi õigust, kui tahta seda kustutada, sest kui kataloogis, kus see fail sees on sul õigus kirjutada (w), siis saab selle faili ära kustutada.
+<br> b) Kataloogil /tmp/kaust on vaja õigusi (w, x), sest on vaja kausta sisse pääseda (x) ja failide muutmiseks kausta sees on vaja kirjutamis (w) õigust. Failile minufail.exe ei vaja ühtegi õigust, kui tahta seda kustutada, sest kui kataloogis, kus see fail sees on sul õigus kirjutada (w), siis saab selle faili ära kustutada.
 
 
 _6.2_
@@ -28,8 +28,8 @@ Setuid õigust on vaja selleks, et tavakasutaja saaks käivitada teatud programm
 _6.6_
 
 Setuid kasutamine nii tõstab, aga samas ka vähendab turvalisust. 
-Näiteks (+): Lubab setuid tavakasutajal teha tegevust, mis nõuab kõrgemaid õigusi, andmata talle neid õigusi jäädavalt või liiga laialdaselt. 
-Näiteks (-): Suurim probleem setuid'l on õiguste Privilege Escalation. Kui setuid-õigusega fail kuulub root kasutajale, on see ründajate jaoks kõige parem sihtmärk.
+<br> Näiteks (+): Lubab setuid tavakasutajal teha tegevust, mis nõuab kõrgemaid õigusi, andmata talle neid õigusi jäädavalt või liiga laialdaselt. 
+<br> Näiteks (-): Suurim probleem setuid'l on õiguste Privilege Escalation. Kui setuid-õigusega fail kuulub root kasutajale, on see ründajate jaoks kõige parem sihtmärk.
 
 _6.7_
 
@@ -39,9 +39,9 @@ _6.8_
 
 Märkan, et õiguste lõpus on lisatud + (-rw-rw----+)
 
-# file: home/opetaja/klass/hinded.txt
-# owner: opetaja
-# group: opetaja
+file: home/opetaja/klass/hinded.txt
+owner: opetaja
+group: opetaja
 user::rw-
 group::---
 group:direktor:rw-
@@ -51,6 +51,6 @@ other::---
 _6.9_
 
 Mitte keegi ei saa faili (+i) sisu muuta (isegi root). Seda saab kustutada, kui teha: 
-1) sudo chattr -i testfail-2
-2) rm testfail-2
+<br> 1) sudo chattr -i testfail-2
+<br> 2) rm testfail-2
   

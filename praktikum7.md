@@ -10,3 +10,6 @@ _Ül 7.2_
 2) MBR Toetab ainult 4 põhipartitsiooni.  GPT aga 128 põhipartitsiooni.
 3) MBR partitsiooniandmed on salvestatud 64 baidi ulatuses, kusjuures iga partitsioonikirje võtab enda alla 16 baiti. GPT-l iga partitsioonikirje võtab enda alla 128 baiti
 4) GPT salvestab kettatabelist varukoopia ketta lõppu. Andmete tervikluse kontrollimiseks kasutab GPT CRC32 kontrollsummasid, mis võimaldab andmete riknemise korral need taastada.
+
+_Ül 7.3_
+https://kodu.ut.ee/~silvernogols/opsys/hdd.png

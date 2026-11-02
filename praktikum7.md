@@ -12,4 +12,29 @@ _Ül 7.2_
 4) GPT salvestab kettatabelist varukoopia ketta lõppu. Andmete tervikluse kontrollimiseks kasutab GPT CRC32 kontrollsummasid, mis võimaldab andmete riknemise korral need taastada.
 
 _Ül 7.3_
+
 https://kodu.ut.ee/~silvernogols/opsys/hdd.png
+
+
+_Ül 7.4_
+
+
+<img width="499" height="563" alt="OS_7 4" src="https://github.com/user-attachments/assets/51cd65f4-a1bc-4434-891c-74478b5d3f64" />
+
+
+_Ül 7.5_
+
+1) -o ro (read-only): Haagib mälupulga ainult lugemiseks. Mälupulgal olevaid faile saab avada ja vaadata, kuid sinna ei saa uusi faile salvestada, olemasolevaid muuta ega kustutada.
+
+2) -t auto (type auto): Annab süsteemile korralduse mälupulga failisüsteemi tüüp (nt FAT32, NTFS, ext4) automaatselt tuvastada, nii et kasutaja ei pea seda käsitsi määrama.
+
+_Ül 7.6_
+
+Ubuntu asendas auto parameetri väärtusega vfat.
+
+_Üll 7.7_
+
+
+<img width="506" height="560" alt="OS_7 7" src="https://github.com/user-attachments/assets/5d4b5e6f-8e3b-4de3-aa40-337bcd7571b9" />
+
+

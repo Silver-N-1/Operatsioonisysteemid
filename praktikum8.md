@@ -1,4 +1,4 @@
-# praktikum 8
+# Praktikum 8
 
 Selles praktikumis õppisin andmete liiasuse (inglise keeles *redundancy*) ja varundamise tehnoloogiatest. Sain teada RAID-tehnoloogia (liiasuse) ja sõltumatu varundamise (backup) põhimõttelist erinevust.
 Õpis seadistama ja haldama tarkvaralist RAID 1 peegeldust Windows 11 keskkonnas ja Linuxis (mdadm). Simuleerisin kõvaketta riket ning läbisin kettamassiivi taastamise protsessi mõlemas operatsioonisüsteemis.

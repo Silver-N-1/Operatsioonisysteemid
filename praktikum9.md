@@ -66,5 +66,5 @@ PS C:\WINDOWS\system32>
 
 ## Ül 9.8
 
-<img width="481" height="562" alt="9 8" src="https://github.com/user-attachments/assets/c7b9039b-cf81-4e8b-bd30-c2372dfa8486" />
+<img width="692" height="477" alt="9 8" src="https://github.com/user-attachments/assets/ecc0c86b-b306-405c-b0c6-d1357472953a" />
 

@@ -56,6 +56,7 @@ See on minu arvutis vajalik (kasutan kooli antud sülearvutit), kuna login sisse
   PS C:\WINDOWS\system32> Get-AppxPackage -Name "Microsoft.YourPhone" | select packageFullName
 
   PackaegFullName
+  
   Microsoft.YourPhone_0.26092.119.0_x64__8wekyb3d8bbwe
 
 

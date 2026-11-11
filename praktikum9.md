@@ -1,5 +1,10 @@
 # Praktikum 9
 
+Selles prakrikumis õppisin kasutama ja haldama keskkonnamuutujaid ning aliaseid Linuxis/Windowsis Õpin haldama taustateenuseid (daemoneid) ning eemaldasin mittevajalikku tarkvara ja rakendusepakette (apt, AppX).
+Lõpuks uuendasin Ubuntu virtuaalmasina uusimale versioonile Ubuntu 26.10.
+
+
+
 ## Ül 9.1
 
 PWD=/ , kuna käsu "sudo su" ja "env" andmise ajal olin juba juurkaustas, siis oli see mul väljundiks. 
@@ -32,3 +37,34 @@ Kokku vabastatud maht: 319,1 MB
 
 
 ## Ül 9.4
+
+<img width="641" height="425" alt="9 4" src="https://github.com/user-attachments/assets/b3160bb1-f335-4066-ae30-ab48e915ea2f" />
+
+
+## Ül 9.5 
+
+Käivitatakse Süsteemi %Path% kataloogis asuv fail. Kuna süsteemi %PATH% kataloogid asuvad sõnes eespool, leitakse ja käivitatakse seal asuv .exe fail enne, kui otsing jõuab kasutaja %PATH% kataloogideni.
+
+## Ül 9.6
+
+Valisin Netlogon
+Otstarve: Domeenis olevate kasutajate ja seadmete valideerimiseks või autentimiseks. Seda kasutatakse kasutaja identiteedi kinnitamiseks võrgus, millele kasutaja püüab ligi pääseda. 
+See on minu arvutis vajalik (kasutan kooli antud sülearvutit), kuna login sisse kooli meilikontoga, ehk seade on liidetud kooli kesksesse domeeni. Ei tohi panna oleku diabled.
+
+## Ül 9.7
+
+PS C:\WINDOWS\system32> Get-AppxPackage -Name "Microsoft.YourPhone" | select packageFullName
+
+PackageFullName
+---------------
+Microsoft.YourPhone_0.26092.119.0_x64__8wekyb3d8bbwe
+
+
+PS C:\WINDOWS\system32> Remove-AppxPackage -Package Microsoft.YourPhone_0.26092.119.0_x64__8wekyb3d8bbwe
+PS C:\WINDOWS\system32> Get-AppxPackage -Name "Microsoft.YourPhone" | select packageFullName
+PS C:\WINDOWS\system32>
+
+## Ül 9.8
+
+<img width="481" height="562" alt="9 8" src="https://github.com/user-attachments/assets/c7b9039b-cf81-4e8b-bd30-c2372dfa8486" />
+

@@ -61,7 +61,9 @@ See on minu arvutis vajalik (kasutan kooli antud sülearvutit), kuna login sisse
 
 
   PS C:\WINDOWS\system32> Remove-AppxPackage -Package Microsoft.YourPhone_0.26092.119.0_x64__8wekyb3d8bbwe
+  
   PS C:\WINDOWS\system32> Get-AppxPackage -Name "Microsoft.YourPhone" | select packageFullName
+  
   PS C:\WINDOWS\system32>
 
 ## Ül 9.8

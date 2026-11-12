@@ -12,7 +12,7 @@
 | Ülesanne 10-7    |       |   Br-uxendm.exe    |                         |  Task Manager -> Detail -> parem klikk veeru peal -> Select columns -> Commit size |
 | Ülesanne 10-8    |       |  Firefox |                         |     Task Manager -> Processes -> Memory     |
 | Ülesanne 10-9    |       | Kasutuses: 17.2 GB (55%), Vaba: 15.2 GB (45%) |                         |    Task Manager -> Performance -> Memory    |
-| Ülesanne 10-10   |       | Vaba: 9.24 GB (1.94%)  |                         |                                      |
+| Ülesanne 10-10   |       | Vaba: 9.24 GB (1.94%)  |                         |   File Explorer -> This PC  |
 | Ülesanne 10-11   |       |         |                         |                                      |
 | Ülesanne 10-12   |       |         |                         |                                      |
 | Ülesanne 10-13   |       |         |                         |                                      |

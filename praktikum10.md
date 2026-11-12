@@ -3,9 +3,11 @@
 
 | Küsimus/ülesanne | Linux | Windows | Linuxis kasutatud käsud | Windowsis kasutatud tööriist ja väli |
 |------------------|-------|---------|-------------------------|--------------------------------------|
-| Ülesanne 10-1    |       |         |                         |                                      |
-| Ülesanne 10-2    |       |         |                         |                                      |
-| Ülesanne 10-3    |       |         |                         |                                      |
+| Ülesanne 10-1    |       |    292   |                         | Task Manager -> Performance -> CPU  |
+| Ülesanne 10-2    |       |  svchost.exe |                         |   Process Explorer -> Start Time|
+| Ülesanne 10-3    |       | DWM-7, Local Server, silvernogols, system, umfd-0, umfd-7|                         |  Task Manager -> Details -> User name |
+
+
 | Ülesanne 10-4    |       |         |                         |                                      |
 | Ülesanne 10-5    |       |         |                         |                                      |
 | Ülesanne 10-6    |       |         |                         |                                      |

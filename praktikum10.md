@@ -2,19 +2,20 @@
 
 
 | Küsimus/ülesanne | Linux | Windows | Linuxis kasutatud käsud | Windowsis kasutatud tööriist ja väli |
-|------------------|-------|---------|-------------------------|--------------------------------------|
-| Ülesanne 10-1 (Protsesside arv)|       |    292   |                         | Task Manager -> Performance -> CPU  |
-| Ülesanne 10-2 (Esimene protssess)|       |  svchost.exe |                         |   Process Explorer -> Start Time|
-| Ülesanne 10-3 (Kasutajate protsessid)|       | DWM-7, Local Server, silvernogols, system, umfd-0, umfd-7| |Task Manager -> Details -> User name |
-| Ülesanne 10-4 (Arvuti Uptime)|       |  3:23:52:55 |                         |  Task Manager -> Perfomance -> CPU -> Up time  |
-| Ülesanne 10-5 (Kõige viimane käivitatud protsess)|       | FileCoAuth.exe |                         |   Process Explorer -> Start Time   | 
-| Ülesanne 10-6 (Protsessori aeg)|       |  Firefox |                         |  Task Manager -> Processes -> CPU    |
-| Ülesanne 10-7 (Virtuaalmälu võttev protsess)|       |   Br-uxendm.exe    |                         |  Task Manager -> Detail -> parem klikk veeru peal -> Select columns -> Commit size |
-| Ülesanne 10-8 (Füüsilist mälu võttev protsess)|       |  Firefox |                         |     Task Manager -> Processes -> Memory     |
-| Ülesanne 10-9 (Füüsilist mälu vaba/hõivatud)|       | Kasutuses: 17.2 GB (55%), Vaba: 15.2 GB (45%) |                         |    Task Manager -> Performance -> Memory    |
-| Ülesanne 10-10 (Põhiketta vaba ruum)|       | Vaba: 9.24 GB (1.94%), Hõivatud: 466,76 GB (98,06%)|                         |   File Explorer -> This PC  |
-| Ülesanne 10-11 (Kõige suurem kaust/fail)|       | Kõige suurem kaust: \Users, kõige suurem fail: OS-Nogols_W11.vdi |                         |   WinDirStat -> Run as administrator -> All Local Drives -> Size Propotion. Suurima faili jaoks vasakul all -> Largest Files|
-| Ülesanne 10-12   |       |X|                         |X|
+|------------------|-------|---------|--------------------------------|--------------------------------------|
+| Ülesanne 10-1 (Protsesside arv)|296|    292   |<code> ps -aux \| wc-l | Task Manager -> Performance -> CPU  |
+| Ülesanne 10-2 (Esimene protssess)| /usr/lib/systemd/systemd|  svchost.exe | <code>ps -p 1 -o pid,comm,args |   Process Explorer -> Start Time|
+| Ülesanne 10-3 (Kasutajate protsessid)| avahi, _chrony, colord, cupsbrowsed, messagebus, polkitd, root, rtkit, silver, syslog, systemd-oom, systemd-resolve, USER | DWM-7, Local Server, silvernogols, system, umfd-0, umfd-7| <code> ps -eo user \| sort \| uniq  |Task Manager -> Details -> User name |
+| Ülesanne 10-4 (Arvuti Uptime)| up  50 min|  3:23:52:55 | <code>uptime|  Task Manager -> Perfomance -> CPU -> Up time  |
+| Ülesanne 10-5 (Kõige viimane käivitatud protsess)| kworker/u17:4-flush-252:0 | FileCoAuth.exe |<code>ps -eo pid,lstart,user,comm --sort=start_time |   Process Explorer -> Start Time | 
+| Ülesanne 10-6 (Protsessori aeg)| /usr/bin/gnome-shell --mode=ubuntu (1.9%)|  Firefox (5,3%)| <code> ps -eo pcpu,pid,user,args \| sort -k 1 -r \| head -n 5 |  Task Manager -> Processes -> CPU |
+| Ülesanne 10-7 (Virtuaalmälu võttev protsess)| gnome-shell|   Br-uxendm.exe    |<code> ps -eo vsz,pid,user,comm | sort -k 1 -rn | head -n 5|  Task Manager -> Detail -> parem klikk veeru peal -> Select columns -> Commit size |
+| Ülesanne 10-8 (Füüsilist mälu võttev protsess)| gjs |  Firefox |<code> ps -eo pmem,rss,pid,user,comm \| sort -k 1 -rn \| head -n 5 | Task Manager -> Processes -> Memory     |
+| Ülesanne 10-9 (Füüsilist mälu vaba/hõivatud)|Hõivatud: 1.6 Gi (50%), Vaba: 490 Mi (15%)| Hõivatud: 17.2 GB (55%), Vaba: 15.2 GB (45%) |<code>free -h|    Task Manager -> Performance -> Memory    |
+| Ülesanne 10-10 (Põhiketta vaba ruum)| Hõivatud: 15GB (61%), Vaba: 10GB (49%) | Hõivatud: 466,76 GB (98,06%), Vaba: 9.24 GB (1.94%)|<code> df -h / |   File Explorer -> This PC  |
+| Ülesanne 10-11 (Kõige suurem kaust/fail)| Kõige suurem kaust: /usr <br> Kõige suurem fail:/swap.img| Kõige suurem kaust: \Users,<br> kõige suurem fail: OS-Nogols_W11.vdi |Suurim kaust: <code> sudo du -sh /* \| sort -hr \| head -n 5 <br><code>sudo du -axh / \| sort -hr \| head -n 10 |   WinDirStat -> Run as administrator -> All Local Drives -> Size Propotion <br> Suurima faili jaoks vasakul all -> Largest Files|
+| Ülesanne 10-12   | 1. <code>sha1sum /dev/zero \| sha1sum /dev/zero</code> puhul kulub protsessoriajast enim kasutajaruumi (user space)(30,5%) <br><img width="637" height="461" alt="10 12 1" src="https://github.com/user-attachments/assets/91b0857e-bd4b-42c9-b64e-d338e07fb7ae" /> <br> 2. <code>sha1sum /dev/urandom \| sha1sum /dev/urandom</code> puhul kulub enim protsessoriaega operatsioonisüsteemi tuumale(system) (sy = 63,6%) <br> <img width="641" height="461" alt="10 12 2" src="https://github.com/user-attachments/assets/253dde8a-516d-495b-90c1-d80026886107" />
+|X|1. <code>sha1sum /dev/zero \| sha1sum /dev/zero</code> + teine terminal top <br> 2. <code>sha1sum /dev/urandom \| sha1sum /dev/urandom</code> + teine terminal top |X|
 | Ülesanne 10-13-1 (kirjutab kõige rohkem salvestusseadmele)|X|System|X| Resource Monitor -> Stop Monitoring -> Disk -> Processes with Disk Activity -> Write (B/sec)|
 | Ülesanne 10-13-2 (Kuhu faili kirjutab ül 10-13-1 protsess)|X|recovery.jsonlz4|X| Resource Monitor -> Stop Monitoring -> Disk -> Disk Activity -> Write (B/sec) -> vaata File |
 | Ülesanne 10-13-3 (Loeb kõige rohkem salvestusseadmelt )|X|Registry|X| Resource Monitor -> Stop Monitoring -> Disk -> Processes with Disk Activity -> Read (B/sec)|

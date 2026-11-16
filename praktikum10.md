@@ -21,9 +21,3 @@
 | Ülesanne 10-13-4 (Mis faili loeb ül 10-13-3 protsess)|X|SOFTWARE.LOG1|X| Resource Monitor -> Stop Monitoring -> Disk -> Disk Activity ->Read (B/sec) -> vaata File|
 | Ülesanne 10-14 (Suurima võrguliikluse mahuga  protsess)|X|firefox.exe,	Local Address: 192.168.8.12,	Local Port: 55000,	Remote Address: 140.82.113.26, Remote Port: 443, 	Latency (ms):204, Total (B/sec): 1 <img width="1428" height="886" alt="image" src="https://github.com/user-attachments/assets/fff51937-de6b-43ce-af87-869ad6609bc1" />|X|Resource Monitor -> Stop Monitoring -> Network -> Total (B/sec) ->Monitor -> |
 | Ülesanne 10-15 (Sõbra arvuti muutunud aeglsemaks)|X|         |X|                                      |
-
-## Ül 10-14 pilt
-Image	PID	Local Address	Local Port	Remote Address	Remote Port	Latency (ms)	Total (B/sec)
-
-
-<img width="1428" height="886" alt="image" src="https://github.com/user-attachments/assets/fff51937-de6b-43ce-af87-869ad6609bc1" />

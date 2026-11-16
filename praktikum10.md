@@ -12,7 +12,7 @@
 | Ülesanne 10-7 (Virtuaalmälu võttev protsess)|       |   Br-uxendm.exe    |                         |  Task Manager -> Detail -> parem klikk veeru peal -> Select columns -> Commit size |
 | Ülesanne 10-8 (Füüsilist mälu võttev protsess)|       |  Firefox |                         |     Task Manager -> Processes -> Memory     |
 | Ülesanne 10-9 (Füüsilist mälu vaba/hõivatud)|       | Kasutuses: 17.2 GB (55%), Vaba: 15.2 GB (45%) |                         |    Task Manager -> Performance -> Memory    |
-| Ülesanne 10-10 (Põhiketta vaba ruum)|       | Vaba: 9.24 GB (1.94%)  |                         |   File Explorer -> This PC  |
+| Ülesanne 10-10 (Põhiketta vaba ruum)|       | Vaba: 9.24 GB (1.94%), Hõivatud: 466,76 GB (98,06%)|                         |   File Explorer -> This PC  |
 | Ülesanne 10-11 (Kõige suurem kaust/fail)|       | Kõige suurem kaust: \Users, kõige suurem fail: OS-Nogols_W11.vdi |                         |   WinDirStat -> Run as administrator -> All Local Drives -> Size Propotion. Suurima faili jaoks vasakul all -> Largest Files|
 | Ülesanne 10-12   |       |X|                         |X|
 | Ülesanne 10-13-1 (kirjutab kõige rohkem salvestusseadmele)|X|System|X| Resource Monitor -> Stop Monitoring -> Disk -> Processes with Disk Activity -> Write (B/sec)|
